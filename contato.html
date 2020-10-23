@@ -1,43 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    <ul id="menu">
-        <li><a href="index.html">Home</a>
-        </li>
-        <li><a href="contato.html">Contato</a>
-        </li>
-    </ul>
-    <h2 class="center">Entre  em contato:</h2>
-    <form >
-        <div class="container-contato" style="background-image: url(assets/img/background-title.jpg);">
-            <div>
-            <label for="nome">Nome</label><br>
-            <input type="text" id="nome">
-            </div>
 
-            <div>
-            <label for="email">E-mail</label><br>
-            <input type="email" name="email" id="email">
-            </div>
+    <div style=" position:static; width: 100%; background-color: rgba(0, 255, 255, 0.582);">
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 
-            <div>
-            <label for="assunto">Assunto</label><br>
-            <input type="text" id="assunto">
-            </div>
+    <!--nome da página-->
 
-            <div>
-            <label for="mensagem">Mensagem</label><br>
-            <textarea name="mensagem" id="mensagem" cols="50" rows="10"></textarea>
-            </div>
-            <button>Enviar</button>
+    <hr>
+
+    <h1 class="center">Entre em contato:</h1>
+
+
+    <hr>
+    <div class="container" style="background-image: url(assets/img/background-title.jpg);">
+
+
+        <div>
+            <form>
+                <label for="nome">Nome</label><br>
+                <input type="text" id="nome" onkeyup="validaNome()">
+                <div id='txtNome' ></div>
+
+                <label for="email">E-mail</label><br>
+                <input type="email" name="email" id="email">
+
+
+
+                <label for="assunto">Assunto</label><br>
+                <input type="text" id="assunto">
+
+
+
+                <label for="mensagem">Mensagem</label><br>
+                <textarea name="mensagem" id="mensagem" cols="50" rows="10"></textarea>
+
+                <button>Enviar</button>
+            </form>
         </div>
-       
-    </form>
+
+
+
+    </div>
+    <hr>
+
+    <footer>
+        <!--rodapé parte da página-->
+
+        <div class="container">
+            <a href="https://www.instagram.com/cleitonaguiarandrade/?hl=pt-br" target="blank">
+                <img class="size-logo p-15" src="assets/img/instagram.png" alt="Logo do instagram">
+            </a>
+
+            <a href="https://www.facebook.com/" target="blank">
+                <img class="size-logo p-15" src="assets/img/facebook.png" alt="Logo do facebook">
+            </a>
+
+            <a href="https://www.linkedin.com/in/cleitonaguiarandrade/" target="blank">
+                <img class="size-logo p-15" src="assets/img/linkedin.png" alt="Logo do linkedin">
+            </a>
+        </div>
+
+        <p class="center">
+
+            Todos os direitos reservados a Cleiton Andrade &copy;
+        </p>
+        </div>
+
+    </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>

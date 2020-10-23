@@ -7,6 +7,7 @@
     display: inline;
     padding: 15px;
     font-size: 20px;
+    margin: 0 auto;
     
 }
 
@@ -43,13 +44,15 @@
     
 }
 
+.p-15 {
+   
+    padding: 15px;
+    
+}
+
 
   .br {
-      border-radius: 2%;
-  }
-
-  .color {
-    background-color: lawngreen;
+      border-radius: 50%;
   }
 
   .size-logo{
